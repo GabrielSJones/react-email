@@ -1,6 +1,6 @@
 {
   "name": "@react-email/render",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "description": "Transform React components into HTML email templates",
   "sideEffects": false,
   "main": "./dist/index.js",
@@ -45,8 +45,8 @@
   "dependencies": {
     "html-to-text": "9.0.5",
     "js-beautify": "^1.14.11",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
     "@babel/preset-react": "7.23.3",

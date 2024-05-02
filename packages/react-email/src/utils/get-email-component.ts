@@ -63,8 +63,9 @@ export const getEmailComponent = async (
     ReadableStream,
     URL,
     URLSearchParams,
+    Headers,
     module: { exports: { default: undefined as unknown } },
-    __filanem: emailPath,
+    __filename: emailPath,
     __dirname: path.dirname(emailPath),
     require: (module: string) => {
       if (module in staticNodeModulesForVM) {
@@ -72,7 +73,7 @@ export const getEmailComponent = async (
         return staticNodeModulesForVM[module];
       }
 
-      // eslint-disable-next-line @typescript-eslint/no-var-requires
+      // eslint-disable-next-line @typescript-eslint/no-var-requires, @typescript-eslint/no-useless-template-literals
       return require(`${module}`) as unknown;
       // this stupid string templating was necessary to not have
       // webpack warnings like:
